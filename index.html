@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/ol-geocoder.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>
+         Desa Website
+        </title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+      
+        <style>
+      body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 1rem;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .section {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+        .section img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+        }
+        .map-container {
+            height: 400px;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+        footer {
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        #map {
+                width: 100%;
+                height: 500px;
+                border: 2px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                margin-top: 20px;
+            }
+            .description-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto 20px; /* Untuk menempatkan gambar di tengah dan memberikan jarak ke bawah */
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+            .map-container {
+                width: 80%;
+                margin: 30px auto;
+                padding: 15px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+ 
+        </style>
+        <title>Peta Desa Pageralang</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+             <h1>
+              Selamat Datang di Desa Pageralang
+             </h1>
+             <nav>
+              <ul>
+               <li>
+                <a href="#home">
+                 Home
+                </a>
+               </li>
+               <li>
+                <a href="#about">
+                 About
+                </a>
+               </li>
+               <li>
+                <a href="#servis">
+                 Services
+                </a>
+               </li>
+               <li>
+                <a href="#kontak">
+                 Contact
+                </a>
+               </li>
+               <li> <a href="#peta">Peta</a></li>
+              
+
+              </ul>
+             </nav>
+            </div>
+           </header>
+           <main>
+            <section class="section" id="home">
+             <h2>
+               Desa Pageralang
+             </h2>
+             <p>
+                Pageralang adalah salah satu desa yang berada di kecamatan Kemranjen, Banyumas, Jawa Tengah, Indonesia. Pageralang kaya akan potensi sumber dayanya . Diantaranya yang paling menonjol adalah Karet. Orang-orang lebih terbiasa menyebut kebun karet yang berada di desa pageralng itu dengan krumput. Sayang sekali orang-orang lebih mengenal krumput sebagai wilayah desa Karangrau, padahal kebun karet krumput masih masuk dalam wilayah desa pageralang. Hanya sebagian kecil saja yang masuk dalam desa Karangrau. Di tengah-tengah perkebunan karet krumput juga terdapat air terjun yang masyarakat setempat menamainya dengan "Crugong" .Sebenarnya nama crugong itu berasal dari 2 kata yaitu "curug" yang artinya air terjun dan "gong" adalah salah satu alat gamelan. Masyarakat setempat menamai curug gong atau crugong karena menurut cerita masyarakat yang beredar, bahwa dahulu dari salah satu curug tersebut dipercaya menyimpan GONG (alat gamelan yang hanya muncul jika diadakan ritual peminjaman. Di lokasi tersebut terdapat 3 kedung (Palung sungai) yang sangat dalam terutama kedung yang tengah. Nah di kedung tengah inilah yang menurut cerita menyimpan alat Gong tersebut. Ada juga yang menceritrakan bahwa kedung nomor dua tersebut menyimpan banyak misteri lainnya seperti tidak bisa habis airnya saat dikuras dengan alat penyedot sekalipun. Keunikan lainnya yaitu diarea curug ke-3 terdapat sebuah gua di samping air yang mengucur deras.Desa pageralang juga terkenal sebagai salah satu desa penghasil buah durian.
+                Desa Pageralang memiliki batas wilayah sebagai berikut :
+               <br> Sebelah utara  : Desa Karangrau, Kecamatan Banyumas
+               <br> Sebelah barat  : Desa Adisana, Kecamatan Kebasen
+                <br>Sebelah timur  : Desa Alasmalang, Kecamatan Kemranjen
+               <br> Sebelah selatan  : Desa Sidamulya, Kecamatan Kemranjen
+             </p>
+            </section>
+            <section class="section">
+             <h2>
+             Peta Desa
+             </h2>
+             <div id="map" id="Peta">
+                <div id="popup" class="ol-popup">
+                    <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                    <div id="popup-content"></div>
+                </div>
+            </div>
+            </section>
+            <section class="section">
+             <h2>
+              Village Profile
+             </h2>
+             <img alt="A beautiful view of the village with green fields and blue sky" height="400" src="https://png.pngtree.com/thumb_back/fh260/background/20210907/pngtree-rural-fields-in-the-morning-image_811140.jpg" width="400"/>
+             <p>
+             </p>
+            </section>
+            <section class="section">
+             <h2>
+              Tentang
+             </h2>
+             <p>
+                Peta Interaktif Desa Pageralang
+
+               <br> Sebagai upaya untuk mempermudah navigasi dan memberikan informasi yang lengkap kepada masyarakat maupun pengunjung, Desa Pageralang menghadirkan sebuah peta interaktif yang dirancang untuk menyajikan detail informasi terkait wilayah desa. Peta ini berfungsi sebagai panduan visual yang tidak hanya membantu dalam orientasi wilayah, tetapi juga menyediakan informasi penting mengenai berbagai aspek kehidupan di Desa Pageralang.
+                Melalui peta interaktif ini, pengguna dapat dengan mudah mengenali batas-batas wilayah administrasi desa, termasuk pembagian RT/RW, yang dilengkapi dengan detail lokasi kantor desa sebagai pusat pelayanan masyarakat. Informasi mengenai fasilitas publik juga tersaji dengan lengkap, seperti letak masjid, sekolah, lapangan olahraga, dan berbagai tempat penting lainnya yang menjadi bagian dari keseharian warga desa. Hal ini diharapkan dapat memudahkan masyarakat dalam mengakses berbagai fasilitas yang tersedia di desa, sekaligus menjadi panduan bagi pengunjung yang ingin mengeksplorasi Desa Pageralang.
+                Tidak hanya itu, peta ini juga memberikan informasi mengenai wilayah hijau dan perkebunan yang menjadi bagian penting dari karakteristik geografis Desa Pageralang. Lokasi area perkebunan karet, taman desa, dan ruang terbuka hijau lainnya ditampilkan secara jelas untuk mendukung pelestarian lingkungan sekaligus meningkatkan potensi wisata dan kenyamanan warga. Dengan visualisasi data yang interaktif dan informatif, peta ini menjadi salah satu langkah Desa Pageralang dalam mengedepankan transparansi, efisiensi, dan inovasi dalam pelayanan berbasis digital.
+                Peta interaktif ini dapat diakses oleh siapa saja melalui platform website resmi Desa Pageralang. Dengan fitur yang intuitif, pengguna dapat menjelajahi setiap sudut desa, mendapatkan gambaran menyeluruh, dan memperoleh informasi mendalam hanya dengan beberapa klik. Hal ini mencerminkan komitmen Desa Pageralang untuk terus bergerak maju dalam memberikan pelayanan modern kepada masyarakat, tanpa melupakan nilai-nilai tradisional yang menjadi ciri khas desa.
+             </p>
+            </section>
+           </main>
+           <footer>
+            <p>
+             © 2023 Desa Pageralang. All rights reserved.
+            </p>
+         
+      
+        <script src="resources/qgis2web_expressions.js"></script>
+<script src="resources/proj4.js"></script>
+        <script>proj4.defs('EPSG:4326','+proj=longlat +datum=WGS84 +no_defs');</script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/ol-geocoder.js"></script>
+        <script src="layers/ADMINISTRASIDESA_AR_25K_1.js"></script><script src="layers/Nama_2.js"></script><script src="layers/Sawah_3.js"></script><script src="layers/Perkebunan_4.js"></script><script src="layers/Desa_Pageralang_poly_5.js"></script><script src="layers/JalanDesa_6.js"></script><script src="layers/Masjid_7.js"></script><script src="layers/Warung_8.js"></script><script src="layers/Warkop_9.js"></script><script src="layers/Pemancingan_10.js"></script><script src="layers/KolamRenang_11.js"></script><script src="layers/Apotek_12.js"></script><script src="layers/Balaidesa_13.js"></script><script src="layers/Lapangan_14.js"></script><script src="layers/Curug_15.js"></script><script src="layers/BengkelMobil_16.js"></script><script src="layers/Cell_17.js"></script><script src="layers/Bengkel_18.js"></script><script src="layers/PomBensin_19.js"></script><script src="layers/agen_20.js"></script><script src="layers/Rumah_21.js"></script><script src="layers/Hotel_22.js"></script><script src="layers/Toko_23.js"></script><script src="layers/Sekolah_24.js"></script><script src="layers/Makam_25.js"></script>
+        <script src="styles/ADMINISTRASIDESA_AR_25K_1_style.js"></script><script src="styles/Nama_2_style.js"></script><script src="styles/Sawah_3_style.js"></script><script src="styles/Perkebunan_4_style.js"></script><script src="styles/Desa_Pageralang_poly_5_style.js"></script><script src="styles/JalanDesa_6_style.js"></script><script src="styles/Masjid_7_style.js"></script><script src="styles/Warung_8_style.js"></script><script src="styles/Warkop_9_style.js"></script><script src="styles/Pemancingan_10_style.js"></script><script src="styles/KolamRenang_11_style.js"></script><script src="styles/Apotek_12_style.js"></script><script src="styles/Balaidesa_13_style.js"></script><script src="styles/Lapangan_14_style.js"></script><script src="styles/Curug_15_style.js"></script><script src="styles/BengkelMobil_16_style.js"></script><script src="styles/Cell_17_style.js"></script><script src="styles/Bengkel_18_style.js"></script><script src="styles/PomBensin_19_style.js"></script><script src="styles/agen_20_style.js"></script><script src="styles/Rumah_21_style.js"></script><script src="styles/Hotel_22_style.js"></script><script src="styles/Toko_23_style.js"></script><script src="styles/Sekolah_24_style.js"></script><script src="styles/Makam_25_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>

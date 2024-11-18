@@ -1,0 +1,1 @@
+var json_PomBensin_19 = {"type":"FeatureCollection","name":"PomBensin_19","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","POM":"SPBU Pertamina Buntu"},"geometry":{"type":"Point","coordinates":[109.272898062888871,-7.592407568616619]}}]}

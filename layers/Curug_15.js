@@ -1,0 +1,1 @@
+var json_Curug_15 = {"type":"FeatureCollection","name":"Curug_15","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","Curug":"Curug Anda"},"geometry":{"type":"Point","coordinates":[109.271820897631912,-7.579493769901553]}}]}

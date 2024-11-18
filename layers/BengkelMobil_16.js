@@ -1,0 +1,1 @@
+var json_BengkelMobil_16 = {"type":"FeatureCollection","name":"BengkelMobil_16","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","BngklMbl":"BENGKEL MOBIL/TRUK BAJANG"},"geometry":{"type":"Point","coordinates":[109.278574606094082,-7.581171275755031]}}]}

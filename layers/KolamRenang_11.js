@@ -1,0 +1,1 @@
+var json_KolamRenang_11 = {"type":"FeatureCollection","name":"KolamRenang_11","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","KolamRenan":"Kolam Renang kj"},"geometry":{"type":"Point","coordinates":[109.280228585943902,-7.581884437674532]}}]}

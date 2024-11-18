@@ -1,0 +1,1 @@
+var json_Balaidesa_13 = {"type":"FeatureCollection","name":"Balaidesa_13","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","Balaidesa":"Balai Desa Pageralang"},"geometry":{"type":"Point","coordinates":[109.282127184852499,-7.579309147802652]}}]}
